@@ -5,13 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/holo_blue_light"
     android:padding="4dp"
     tools:context=".ProfileActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="284dp"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
+        android:textColor="@color/white"
         android:text="Welcome to Gamer Connect! Please Login!"
         />
 
@@ -20,8 +27,7 @@
         android:layout_height="wrap_content"
         android:padding="7dp"
         android:text="Don't Have an Account? Click on 'Create Account'! "
-        />
-
+        android:textColor="@color/white" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -31,6 +37,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Email: " />
 
         <EditText
@@ -48,6 +55,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Password: " />
 
         <EditText

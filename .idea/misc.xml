@@ -3,23 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1365" />
         <entry key="app/src/main/res/layout/account_create.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/account_create_admin.xml" value="0.30885416666666665" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.23697916666666666" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/page_admin.xml" value="0.22" />
-=======
-        <entry key="..\:/Users/Denve/GamerConnect/app/src/main/res/layout/account_create.xml" value="0.1984375" />
-        <entry key="..\:/Users/Denve/GamerConnect/app/src/main/res/layout/activity_main.xml" value="0.38229166666666664" />
-        <entry key="..\:/Users/esmae/Documents/Fall 2022/Senior Experiance/GamerConnect/admin_app/src/main/res/menu/menu_main.xml" value="0.1712962962962963" />
-        <entry key="..\:/Users/esmae/Documents/Fall 2022/Senior Experiance/GamerConnect/app/src/main/res/layout/account_create.xml" value="0.1796875" />
-        <entry key="..\:/Users/esmae/Documents/Fall 2022/Senior Experiance/GamerConnect/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
-        <entry key="..\:/Users/esmae/Documents/Fall 2022/Senior Experiance/GamerConnect/app/src/main/res/layout/activity_main.xml" value="0.161231884057971" />
-        <entry key="..\:/Users/esmae/Documents/Fall 2022/Senior Experiance/GamerConnect/app/src/main/res/layout/activity_registration.xml" value="0.1796875" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22708333333333333" />
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.22" />
       </map>
     </option>
   </component>
@@ -28,5 +16,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>

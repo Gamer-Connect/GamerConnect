@@ -5,30 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/holo_blue_light"
     android:padding="4dp"
     tools:context=".ProfileActivity">
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
+        android:textColor="@color/white"
         android:text="Welcome to Gamer Connect! Please Login!"
         />
 
-<<<<<<< HEAD
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="7dp"
-        android:text="Don't Have an Account? Click on 'Create Account'! "
-        />
-
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,6 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Email: " />
 
         <EditText
@@ -55,6 +50,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Password: " />
 
         <EditText
@@ -84,16 +80,6 @@
             android:text="Login"
             />
 
-<<<<<<< HEAD
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Create Account"
-            android:id="@+id/createButton"
-            />
-
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
     </LinearLayout>
 
 </LinearLayout>
