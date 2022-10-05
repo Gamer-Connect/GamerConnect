@@ -9,9 +9,10 @@
     android:padding="4dp"
     tools:context=".ProfileActivity">
 
+
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="284dp"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -22,12 +23,6 @@
         android:text="Welcome to Gamer Connect! Please Login!"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="7dp"
-        android:text="Don't Have an Account? Click on 'Create Account'! "
-        android:textColor="@color/white" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -83,13 +78,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Login"
-            />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Create Account"
-            android:id="@+id/createButton"
             />
 
     </LinearLayout>
