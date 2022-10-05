@@ -91,11 +91,8 @@
         android:layout_gravity="center"
         >
 
-        <Button
-<<<<<<< HEAD
-            android:id="@+id/activityRegistrationCreateAccountButton"
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
+        <Button android:id="@+id/activityRegistrationCreateAccountButton"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Create Account"
