@@ -3,6 +3,7 @@ package edu.msudenver.gamerconnect.manageaccount
 import android.app.Activity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -41,9 +42,15 @@ class AccountAuth: Activity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    Log.d(TAG, "userCreateEmail:success")
+                    Log.d(TAG, "userCreateAccount:success")
                     val user = auth.currentUser
                     updateUI(user)
+                }
+                else {
+                    Log.w(TAG, "userCreateAccount:failure", task.exception)
+                    Toast.makeText(baseContext, "Account already exists or couldn't be created.",
+                        Toast.LENGTH_SHORT).show()
+                    updateUI(null)
                 }
             }
 
