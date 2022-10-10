@@ -37,14 +37,20 @@ class AccountAuth: Activity() {
     }
 
     // Sign-up new users
-    private fun createAccount(email:String, password:String) {
+    public fun createAccount(email:String, password:String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d(TAG, "userCreateEmail:success")
+                    val user = auth.currentUser
+                    updateUI(user)
                 }
             }
 
+    }
+
+    private fun updateUI(user: FirebaseUser?) {
+        TODO("Not yet implemented")
     }
 
     companion object {
