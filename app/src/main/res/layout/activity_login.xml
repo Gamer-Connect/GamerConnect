@@ -2,33 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_blue_light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="4dp"
     tools:context=".ProfileActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/screen_shot_2022_09_25_at_9_41_03_pm" />
 
-=======
-
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
+        android:textColor="@color/white"
         android:text="Welcome to Gamer Connect! Please Login!"
         />
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="7dp"
+        android:textColor="@color/white"
         android:text="Don't Have an Account? Click on 'Create Account'! "
         />
-
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -38,13 +38,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Email: " />
 
         <EditText
             android:id="@+id/user_Email"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,6 +57,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Password: " />
 
         <EditText
@@ -62,7 +65,9 @@
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/showHideBtn"
@@ -84,7 +89,6 @@
             android:text="Login"
             />
 
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -92,8 +96,6 @@
             android:id="@+id/createButton"
             />
 
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
     </LinearLayout>
 
 </LinearLayout>
