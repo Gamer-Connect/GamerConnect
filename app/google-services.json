@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "942014272253",
-    "project_id": "game-connector-firebase-auth",
-    "storage_bucket": "game-connector-firebase-auth.appspot.com"
+    "project_number": "86572519961",
+    "project_id": "gamer-connect-c37de",
+    "storage_bucket": "gamer-connect-c37de.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:942014272253:android:ad37b6334feaa3ef736494",
+        "mobilesdk_app_id": "1:86572519961:android:34e5f1748bac039408d088",
         "android_client_info": {
           "package_name": "edu.msudenver.gamerconnect"
         }
       },
       "oauth_client": [
         {
-          "client_id": "942014272253-0taeoojmtblq2v2e7vsm6e2mnjg8fv67.apps.googleusercontent.com",
+          "client_id": "86572519961-5i3b5d7kr91btlrgdptfiadf9b5k1l3s.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCLTqrlcgVHY-hVQJNbTftwJ9-m_UuJK2Q"
+          "current_key": "AIzaSyBYm3VBIHVH2QKlyJMSHzeGDHPwyFnk8tk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "942014272253-0taeoojmtblq2v2e7vsm6e2mnjg8fv67.apps.googleusercontent.com",
+              "client_id": "86572519961-5i3b5d7kr91btlrgdptfiadf9b5k1l3s.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

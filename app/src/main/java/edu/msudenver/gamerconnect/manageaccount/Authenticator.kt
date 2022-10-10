@@ -14,6 +14,7 @@ import android.os.Bundle
 
 class Authenticator(context: Context?) :  AbstractAccountAuthenticator(context){
 
+
     val am: AccountManager = AccountManager.get(context)
     val options = Bundle()
 
