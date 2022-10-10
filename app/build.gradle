@@ -52,4 +52,7 @@ dependencies {
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
+    // Google Play services
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+
 }
