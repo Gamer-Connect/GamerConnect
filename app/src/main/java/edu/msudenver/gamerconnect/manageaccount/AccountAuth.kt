@@ -16,9 +16,8 @@ import com.google.firebase.auth.ktx.auth
  *                  -Sends verification email
  */
 class AccountAuth: Activity() {
+
     private lateinit var auth: FirebaseAuth
-
-
 
     // Check Auth state
     public override fun onCreate(savedInstanceState: Bundle?) {
