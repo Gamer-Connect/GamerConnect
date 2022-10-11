@@ -38,7 +38,7 @@ open class AccountAuth: Activity() {
     }
 
     /** Sign-up new users */
-    public fun createAccount(email:String, password:String) {
+    fun createAccount(email:String, password:String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -57,7 +57,7 @@ open class AccountAuth: Activity() {
     }
 
     /** Sign-in existing users */
-    public fun signIn(email: String, password: String) {
+    fun signIn(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -75,7 +75,7 @@ open class AccountAuth: Activity() {
 
     /** Get and verify account information */
 
-    public fun getCurrentUser() {
+    fun getCurrentUser() {
         val user = Firebase.auth.currentUser
         user?.let {
             val name = user.displayName
