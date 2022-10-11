@@ -5,20 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="4dp"
+    android:background="@android:color/holo_blue_light"
+    android:padding="10dp"
     tools:context=".ProfileActivity">
 
 
-=======
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
 
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
-        android:text="Welcome to Gamer Connect! Please Login!"
+        android:textColor="@color/white"
+        android:text="Welcome to Gamer Connect!"
+        android:layout_gravity="center"
         />
-
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,49 +31,45 @@
         android:text="Don't Have an Account? Click on 'Create Account'! "
         />
 
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email: " />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingEnd="40dp">
 
         <EditText
-            android:id="@+id/user_Email"
-            android:layout_width="180dp"
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password: " />
+            android:hint="Email"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
 
         <EditText
-            android:id="@+id/user_Password"
-            android:layout_width="180dp"
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:inputType="textPassword"/>
+            android:hint="Password"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/showHideBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show"/>
+            android:text="Show password"
+            android:textSize="10dp"
+            android:layout_gravity="left"/>
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -79,10 +79,10 @@
         >
 
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Login"
-            />
+            android:text="Login" />
 
 
         <Button
@@ -92,8 +92,6 @@
             android:id="@+id/createButton"
             />
 
-=======
->>>>>>> 3868dd6d72487aedd6f74dd94839bef9e95af067
     </LinearLayout>
 
 </LinearLayout>

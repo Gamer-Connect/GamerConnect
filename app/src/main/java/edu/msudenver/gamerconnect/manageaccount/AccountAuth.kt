@@ -16,7 +16,7 @@ import com.google.firebase.auth.ktx.auth
  *                  -Sign-in to existing user account
  *                  -Sends verification email
  */
-class AccountAuth: Activity() {
+open class AccountAuth: Activity() {
 
     private lateinit var auth: FirebaseAuth
 
@@ -61,7 +61,7 @@ class AccountAuth: Activity() {
     }
 
     companion object {
-        private const val TAG = "EmailPassword"
+        private const val TAG = "AccountAuth"
     }
 
 
