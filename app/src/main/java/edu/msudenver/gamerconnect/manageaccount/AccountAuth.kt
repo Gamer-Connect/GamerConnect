@@ -29,7 +29,7 @@ open class AccountAuth: Activity() {
         super.onStart()
         val currentUser = auth.currentUser
         if(currentUser != null) {
-            reload();
+            reload()
         }
     }
 
@@ -37,12 +37,12 @@ open class AccountAuth: Activity() {
         TODO("Not yet implemented")
     }
 
-    // Sign-up new users
+    /** Sign-up new users */
     public fun createAccount(email:String, password:String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    Log.d(TAG, "userCreateAccount:success")
+                    Log.d(TAG, "Account created successfully")
                     val user = auth.currentUser
                     updateUI(user)
                 }
@@ -53,6 +53,41 @@ open class AccountAuth: Activity() {
                     updateUI(null)
                 }
             }
+
+    }
+
+    /** Sign-in existing users */
+    public fun signIn(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Log.d(TAG, "Account sign-in successfully")
+                    val user = auth.currentUser
+                    updateUI(user)
+                }
+                else {
+                    Log.w(TAG, "Failure to sign-in", task.exception)
+                    Toast.makeText(baseContext, "Password is incorrect or email is wrong.", Toast.LENGTH_SHORT).show()
+                    updateUI(null)
+                }
+            }
+    }
+
+    /** Get and verify account information */
+
+    public fun getCurrentUser() {
+        val user = Firebase.auth.currentUser
+        user?.let {
+            val name = user.displayName
+            val email = user.email
+            val photoUrl = user.photoUrl
+
+            val emailVerified = user.isEmailVerified
+
+            // Unique Firebase user ID
+            // Use FirebaseUser.getToken() to confirm with Firebase
+            val userId = user.uid
+        }
 
     }
 
