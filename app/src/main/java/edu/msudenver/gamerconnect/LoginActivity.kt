@@ -24,16 +24,17 @@ class LoginActivity : AppCompatActivity() {
         lateinit var password:String
 
         loginBtn.setOnClickListener{
-            email = emailEdtTxt.text.toString()
-            password = passwordEdtTxt.text.toString()
-
             if (email.contains("@")) {
                 Toast.makeText(applicationContext,
                     "Please enter a valid email",
                     Toast.LENGTH_SHORT)
                     .show()
             }
-
+            else
+                authLogin(
+                    emailEdtTxt.text.toString(),
+                    passwordEdtTxt.text.toString()
+                )
         }
 
         val buttonClick = findViewById<Button>(R.id.createButton)
@@ -41,6 +42,10 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
+
+    }
+
+    private fun authLogin(email: String, password:String) {
 
     }
 }
