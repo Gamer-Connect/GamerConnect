@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
             email = emailEdtTxt.text.toString()
             password = passwordEdtTxt.text.toString()
 
-            if (email.contains("@")) {
+            if (!email.contains("@")) {
                 Toast.makeText(applicationContext,
                     "Please enter a valid email",
                     Toast.LENGTH_SHORT)
