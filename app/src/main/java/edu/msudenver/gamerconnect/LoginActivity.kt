@@ -17,16 +17,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        lateinit var loginBtn: Button
-        lateinit var emailEdtTxt: EditText
-        lateinit var passwordEdtTxt: EditText
+        var loginBtn: Button = findViewById(R.id.loginBtn)
+        var emailEdtTxt: EditText = findViewById(R.id.userEmail)
+        var passwordEdtTxt: EditText = findViewById(R.id.userPassword)
         lateinit var email:String
         lateinit var password:String
-
-        loginBtn = findViewById(R.id.loginBtn)
-        emailEdtTxt = findViewById(R.id.userEmail)
-        passwordEdtTxt = findViewById(R.id.userPassword)
-
 
         loginBtn.setOnClickListener{
             email = emailEdtTxt.text.toString()
