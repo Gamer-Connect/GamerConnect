@@ -1,6 +1,7 @@
 package edu.msudenver.gamerconnect.manageaccount
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -8,6 +9,8 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import edu.msudenver.gamerconnect.ProfileActivity
+import edu.msudenver.gamerconnect.RegistrationActivity
 
 /**
  * This class uses Firebase Authentication to
@@ -34,11 +37,12 @@ open class AccountAuth: Activity() {
     }
 
     private fun reload() {
-        TODO("Not yet implemented")
+        val intent = Intent(this, ProfileActivity::class.java)
+        startActivity(intent)
     }
 
     /** Sign-up new users */
-    public fun createAccount(email:String, password:String) {
+    fun createAccount(email:String, password:String) {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -57,7 +61,7 @@ open class AccountAuth: Activity() {
     }
 
     /** Sign-in existing users */
-    public fun signIn(email: String, password: String) {
+    fun signIn(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -75,7 +79,7 @@ open class AccountAuth: Activity() {
 
     /** Get and verify account information */
 
-    public fun getCurrentUser() {
+    fun getCurrentUser() {
         val user = Firebase.auth.currentUser
         user?.let {
             val name = user.displayName
@@ -92,7 +96,8 @@ open class AccountAuth: Activity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        TODO("Not yet implemented")
+        reload()
+
     }
 
     companion object {
