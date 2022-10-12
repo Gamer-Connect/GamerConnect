@@ -10,8 +10,7 @@ In this version of the app...
 
 
 
-
-
+[Bluestacks Android Emulator](https://www.bluestacks.com/using-android-on-pc.html)
 
 In order to test our Android App please download and install Android Studio.
 link: [Android Studio](https://developer.android.com/studio/)
