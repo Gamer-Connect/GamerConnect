@@ -8,8 +8,13 @@ In this version of the app...
 
 
 
+
+
+
+
+
 In order to test our Android App please download and install Android Studio.
-link: https://developer.android.com/studio/
+link: [Android Studio](https://developer.android.com/studio/)
 
 Upon starting for the first time a pop-up will appear.
 This looks for previous settings from Android Studio.  We are assuming you have none.
@@ -18,7 +23,7 @@ Ensure that the "Do not import settings" button is checked and click "ok"
 
 
 From our GitHub repository...
-link: https://github.com/Gamer-Connect/GamerConnect/tree/main
+link: [Gamer-Connect GitHub Repository](https://github.com/Gamer-Connect/GamerConnect/tree/main)
 
 
 
