@@ -1,6 +1,12 @@
 README file
 
-Welcome to Gamer Connect!
+# Welcome to Gamer Connect!
+
+## Version 0.0.2
+In this version of the app...
+
+
+
 
 In order to test our Android App please download and install Android Studio.
 link: https://developer.android.com/studio/
