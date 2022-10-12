@@ -1,1 +1,1 @@
-*Gamer Connect Installation Instructions
+# Gamer Connect Installation Instructions
