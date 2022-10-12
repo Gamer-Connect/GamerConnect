@@ -1,6 +1,7 @@
 package edu.msudenver.gamerconnect.manageaccount
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -8,6 +9,8 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import edu.msudenver.gamerconnect.ProfileActivity
+import edu.msudenver.gamerconnect.RegistrationActivity
 
 /**
  * This class uses Firebase Authentication to
@@ -34,7 +37,8 @@ open class AccountAuth: Activity() {
     }
 
     private fun reload() {
-        TODO("Not yet implemented")
+        val intent = Intent(this, ProfileActivity::class.java)
+        startActivity(intent)
     }
 
     /** Sign-up new users */
@@ -92,7 +96,8 @@ open class AccountAuth: Activity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        TODO("Not yet implemented")
+        reload()
+
     }
 
     companion object {
