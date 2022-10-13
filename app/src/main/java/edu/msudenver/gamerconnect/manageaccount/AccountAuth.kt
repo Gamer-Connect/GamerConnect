@@ -54,7 +54,7 @@ open class AccountAuth: Activity() {
                     Log.w(TAG, "userCreateAccount:failure", task.exception)
                     Toast.makeText(baseContext, "Account already exists or couldn't be created.",
                         Toast.LENGTH_SHORT).show()
-                    updateUI(null)
+                    //updateUI(user)
                 }
             }
 
@@ -72,7 +72,7 @@ open class AccountAuth: Activity() {
                 else {
                     Log.w(TAG, "Failure to sign-in", task.exception)
                     Toast.makeText(baseContext, "Password is incorrect or email is wrong.", Toast.LENGTH_SHORT).show()
-                    updateUI(null)
+                    //updateUI(null)
                 }
             }
     }
@@ -101,7 +101,7 @@ open class AccountAuth: Activity() {
     }
 
     companion object {
-        private const val TAG = "AccountAuth"
+        const val TAG = "AccountAuth"
     }
 
 
