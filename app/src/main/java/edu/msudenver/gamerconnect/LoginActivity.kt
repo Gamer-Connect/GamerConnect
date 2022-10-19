@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import edu.msudenver.gamerconnect.MainDashboard.DashboardScreen
 
 
 class LoginActivity : AppCompatActivity() {
@@ -44,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
 
         val buttonClick = findViewById<Button>(R.id.createButton)
         buttonClick.setOnClickListener {
-            val intent = Intent(this, RegistrationActivity::class.java)
+            val intent = Intent(this, DashboardScreen::class.java)
             startActivity(intent)
         }
 
