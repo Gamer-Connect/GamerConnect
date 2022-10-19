@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
-import com.google.android.gms.auth.api.identity.SignInPassword
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import edu.msudenver.gamerconnect.MainDashboard.DashboardScreen
 import edu.msudenver.gamerconnect.manageaccount.AccountAuth
 
 class RegistrationActivity : AppCompatActivity() {
@@ -46,13 +46,8 @@ class RegistrationActivity : AppCompatActivity() {
             checkPassword = checkPasswordTxt.text.toString()
 
 
-            //validateInfo(fullName,userName)
-            //validEmail(email)
-            //validPassword(password, checkPassword)
-
-            createUser(email, password)
-
-
+            if (validateInfo(fullName,userName) && validEmail(email) && validPassword(password, checkPassword))
+                createUser(email, password)
 
         }
 
@@ -60,22 +55,36 @@ class RegistrationActivity : AppCompatActivity() {
 
 
 
-    private fun validateInfo(name:String, user:String) {
+    private fun validateInfo(name:String, user:String): Boolean {
+        var errName:TextView = findViewById(R.id.errName)
+        var errUser:TextView = findViewById(R.id.errUser)
+
         if (name.isEmpty()) {
-            //set err text
-        }
-        if (user.isEmpty()) {
-            //set err txt
+            errName.visibility = View.VISIBLE
+            errName.text = "Please enter name"
+            errName.error
         }
 
+        if (user.isEmpty()) {
+            errUser.visibility = View.VISIBLE
+            errUser.text = "Please enter user name"
+            errUser.error
+        }
+
+        /** TODO create validation to check for duplication of user name within database */
+
+        return true
+
     }
-    private fun validEmail(email: String) {
+    private fun validEmail(email: String): Boolean {
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             //err msg
         }
+        return true
     }
-    private fun validPassword(password: String, checkPassword: String) {
-        TODO("Not yet implemented")
+    private fun validPassword(password: String, checkPassword: String): Boolean {
+
+        return true
     }
 
     private fun createUser(email: String, password: String) {
