@@ -3,16 +3,20 @@ package edu.msudenver.gamerconnect
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.PackageManagerCompat.LOG_TAG
+import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuth.AuthStateListener
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import edu.msudenver.gamerconnect.manageaccount.AccountAuth
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -20,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var email:String
     private lateinit var password:String
+    private lateinit var mAuthListener: AuthStateListener
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,8 +65,9 @@ class LoginActivity : AppCompatActivity() {
         authLogin(email, password)
     }
 
+
     private fun authLogin(email: String, password:String) {
-        Log.d(TAG, "email:$email password: $password being sent to auth")
+        Log.d(TAG, "email:$email password:$password being sent to auth")
         auth = Firebase.auth
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -71,9 +77,26 @@ class LoginActivity : AppCompatActivity() {
                     updateUI(user)
                     finish()
                 }
-                else {
-                    Log.w(TAG, "Failure to sign-in", task.exception)
-                    Toast.makeText(baseContext, "Password is incorrect or email is wrong.", Toast.LENGTH_SHORT).show()
+                if(!task.isSuccessful) {
+                    try {
+                        throw task.exception!!
+                    } catch (e: FirebaseAuthInvalidUserException) {
+                        //mStatusTextView.setError("Invalid Emaild Id")
+                        //mStatusTextView.requestFocus()
+                    } catch (e: FirebaseAuthInvalidCredentialsException) {
+                        Log.d(TAG, "email :$email")
+                        //mStatusTextView.setError("Invalid Password")
+                        //mStatusTextView.requestFocus()
+                    } catch (e: FirebaseNetworkException) {
+                        //showErrorToast("error_message_failed_sign_in_no_network")
+                    } catch (e: Exception) {
+                        Log.e(TAG, e.message!!)
+                    }
+                    Log.w(TAG, "signInWithEmail:failed", task.exception)
+//                    Toast.makeText(
+//                        this@LoginActivity, R.string.login_error,
+//                        Toast.LENGTH_SHORT
+//                    ).show()
                     //updateUI(null)
                 }
             }
