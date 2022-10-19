@@ -7,7 +7,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.PackageManagerCompat.LOG_TAG
 import com.google.firebase.FirebaseNetworkException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
@@ -43,9 +42,10 @@ class LoginActivity : AppCompatActivity() {
             validateLogin(email, password)
         }
 
+        /** Create Account */
         val buttonClick = findViewById<Button>(R.id.createButton)
         buttonClick.setOnClickListener {
-            val intent = Intent(this, DashboardScreen::class.java)
+            val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
         }
 
@@ -101,7 +101,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        val intent = Intent(this, ProfileActivity::class.java)
+        val intent = Intent(this, DashboardScreen::class.java)
         startActivity(intent)
     }
 }
