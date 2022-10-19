@@ -13,7 +13,7 @@ class RegistrationActivity : AppCompatActivity() {
         // Brings up new screen when create button on activity registration is clicked
         val arCreateAccountButton = findViewById<Button>(R.id.activityRegistrationCreateAccountButton)
         arCreateAccountButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
