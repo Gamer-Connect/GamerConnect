@@ -4,6 +4,7 @@ README file
 ---
 ## Version 0.0.3   Released 10/19/2022
 <br>In this version of the app...</br>
+* There is now game titles via [IGDB](igdb.com).
 
 ---
 ## Version 0.0.2   Released 10/12/2022
