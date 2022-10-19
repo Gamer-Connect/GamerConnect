@@ -81,23 +81,19 @@ class LoginActivity : AppCompatActivity() {
                     try {
                         throw task.exception!!
                     } catch (e: FirebaseAuthInvalidUserException) {
-                        //mStatusTextView.setError("Invalid Emaild Id")
-                        //mStatusTextView.requestFocus()
+                        //statusTextView.setError("Invalid Emaild Id")
+                        //statusTextView.requestFocus()
                     } catch (e: FirebaseAuthInvalidCredentialsException) {
                         Log.d(TAG, "email :$email")
-                        //mStatusTextView.setError("Invalid Password")
-                        //mStatusTextView.requestFocus()
+                        //statusTextView.setError("Invalid Password")
+                        //statusTextView.requestFocus()
                     } catch (e: FirebaseNetworkException) {
-                        //showErrorToast("error_message_failed_sign_in_no_network")
+                        Toast.makeText(applicationContext, "Failed sign-in no network", Toast.LENGTH_SHORT).show()
                     } catch (e: Exception) {
                         Log.e(TAG, e.message!!)
                     }
                     Log.w(TAG, "signInWithEmail:failed", task.exception)
-//                    Toast.makeText(
-//                        this@LoginActivity, R.string.login_error,
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-                    //updateUI(null)
+                    Toast.makeText(applicationContext, "Sign-in failed", Toast.LENGTH_SHORT).show()
                 }
             }
 
