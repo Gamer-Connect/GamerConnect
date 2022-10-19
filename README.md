@@ -8,10 +8,10 @@ README file
 
 ---
 ## Version 0.0.2   Released 10/12/2022
-<br>In this version of the app...</br>
-<br>The Login and Create Account pages have been created.  </br>
-<br>There is limited button functionality, the 'Create Account' button works from the login page.  </br>
-<br>Added Gamer Connect logo and design aesthetics to the Login page.  </br>
+* In this version of the app...
+* The Login and Create Account pages have been created. 
+* There is limited button functionality, the 'Create Account' button works from the login page. 
+* Added Gamer Connect logo and design aesthetics to the Login page. 
 
 
 
