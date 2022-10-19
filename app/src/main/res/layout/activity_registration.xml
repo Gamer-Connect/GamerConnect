@@ -5,116 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="4dp"
-    tools:context=".ProfileActivity">
-
+    tools:context=".RegistrationActivity"
+    android:background="#3F474C"
+    android:padding="10dp"
+    android:gravity="center" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:text="Thank You for Choosing Gamer Connect!"
-        />
+        android:padding="7dp"
+        android:textColor="#FFFFFF"
+        android:text="Create your Gamer Connect Account" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/createName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="First Name: " />
-
-        <EditText
-            android:id="@+id/user_First_Name"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Last Name: " />
-
-        <EditText
-            android:id="@+id/user_Last_Name"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email: " />
-
-        <EditText
-            android:id="@+id/user_Email"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username: " />
-
-        <EditText
-            android:id="@+id/user_Username"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password: " />
-
-        <EditText
-            android:id="@+id/user_Password"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:hint="Full Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
         android:layout_gravity="center"
-        >
+        android:layout_marginBottom="10dp"/>
 
-        <Button
-            android:id="@+id/activityRegistrationCreateAccountButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Create Account"
-            />
+    <EditText
+        android:id="@+id/createUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
 
-    </LinearLayout>
+
+    <EditText
+        android:id="@+id/createEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/createPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/createPasswordCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create Account"
+        android:id="@+id/createAccount" />
+
 
 </LinearLayout>
