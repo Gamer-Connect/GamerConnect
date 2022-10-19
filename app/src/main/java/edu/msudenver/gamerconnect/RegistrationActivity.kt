@@ -11,6 +11,8 @@ import android.widget.Toast
 import com.google.android.gms.auth.api.identity.SignInPassword
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import edu.msudenver.gamerconnect.MainDashboard.DashboardScreen
 import edu.msudenver.gamerconnect.manageaccount.AccountAuth
 
@@ -44,13 +46,12 @@ class RegistrationActivity : AppCompatActivity() {
             checkPassword = checkPasswordTxt.text.toString()
 
 
-            validateInfo(fullName,userName)
-            validEmail(email)
-            validPassword(password, checkPassword)
+            //validateInfo(fullName,userName)
+            //validEmail(email)
+            //validPassword(password, checkPassword)
 
-            if (true) {
-                createUser(email, password)
-            }
+            createUser(email, password)
+
 
 
         }
@@ -78,6 +79,8 @@ class RegistrationActivity : AppCompatActivity() {
     }
 
     private fun createUser(email: String, password: String) {
+        Log.d(TAG, "email:$email password:$password being sent to create")
+            auth = Firebase.auth
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
