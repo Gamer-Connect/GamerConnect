@@ -3,10 +3,11 @@
 ## Placeholder
 [Gamer-Connect GitHub Repository](https://github.com/Gamer-Connect/GamerConnect/tree/main)
 [Android Studio](https://developer.android.com/studio/)
-
+[Gamer Connect APK downloads](https://drive.google.com/drive/folders/1GIFDsYbtWTWznMRf02ZiG-VD2y_sPhQk?usp=sharing)
 
 ### Using Gamer Connect on PC via emulator
-[Bluestacks Android Emulator](https://www.bluestacks.com/using-android-on-pc.html)
+[Instructions for Android Studio](https://learn.microsoft.com/en-us/windows/android/emulator#install-android-emulator-with-visual-studio)
+
 ***
 ### Using Gamer Connect on Android Phone
 
