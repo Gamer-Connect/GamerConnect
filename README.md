@@ -2,7 +2,7 @@ README file
 
 # Welcome to Gamer Connect!
 ---
-## Version 0.0.   Released 10//2022
+## Version 0.0.4   Released 10//2022
 <br>In this version of the app...</br>
 * Added app icon for Android screen.
 * 
