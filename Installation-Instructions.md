@@ -10,7 +10,7 @@
 
 ***
 ### Using Gamer Connect on Android Phone
-* Download the Gamer Connect APK from the link above then follow [these instructions.](https://youtu.be/N0M4XGkpCn4)
+* Download a Gamer Connect APK from the link above then follow [these instructions.](https://youtu.be/N0M4XGkpCn4)
 ***
 
 
