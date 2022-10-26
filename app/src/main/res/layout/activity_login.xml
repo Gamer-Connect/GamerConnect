@@ -21,13 +21,14 @@
         android:padding="4dp"
         android:textColor="@color/white"
         android:text="Welcome to Gamer Connect!"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="7dp"
+        android:textColor="@color/white"
         android:text="Don't Have an Account? Click on 'Create Account'! "
         />
 
@@ -41,7 +42,7 @@
         <EditText
             android:id="@+id/userEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Email"
             android:textColorHint="#ffffffff"
             android:textColor="#ffffffff"
@@ -53,7 +54,7 @@
         <EditText
             android:id="@+id/userPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Password"
             android:textColorHint="#ffffffff"
             android:textColor="#ffffffff"
@@ -63,11 +64,11 @@
 
         <Button
             android:id="@+id/showHideBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="Show password"
-            android:textSize="10dp"
-            android:layout_gravity="left"/>
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 
@@ -82,6 +83,7 @@
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:drawable/dialog_holo_light_frame"
             android:text="Login" />
 
 
@@ -89,6 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Create Account"
+            android:background="@android:drawable/dialog_holo_light_frame"
             android:id="@+id/createButton"
             />
 

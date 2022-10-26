@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1365" />
         <entry key="app/src/main/res/layout/account_create.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/account_create_admin.xml" value="0.30885416666666665" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.23697916666666666" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_page_home.xml" value="0.30885416666666665" />
-        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.30885416666666665" />
-        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/page_admin.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/account_create_admin.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_dashboard_screen.xml" value="0.13114035087719297" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_page_home.xml" value="0.13114035087719297" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.13114035087719297" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/page_admin.xml" value="0.1793859649122807" />
       </map>
     </option>
   </component>
@@ -19,5 +21,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>

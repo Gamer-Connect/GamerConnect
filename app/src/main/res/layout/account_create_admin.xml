@@ -4,9 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
     android:orientation="vertical"
     android:padding="4dp"
     tools:context=".ProfileActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -21,13 +27,15 @@
         <EditText
             android:id="@+id/admin_First_Name"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/admin_First_Name"
         android:orientation="horizontal">
 
         <TextView
@@ -38,13 +46,15 @@
         <EditText
             android:id="@+id/admin_Last_Name"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/admin_Last_Name"
         android:orientation="horizontal">
 
         <TextView
@@ -55,13 +65,15 @@
         <EditText
             android:id="@+id/admin_Email"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/admin_Email"
         android:orientation="horizontal">
 
         <TextView
@@ -72,13 +84,15 @@
         <EditText
             android:id="@+id/user_Email"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/user_Email"
         android:orientation="horizontal">
 
         <TextView
@@ -89,14 +103,16 @@
         <EditText
             android:id="@+id/admin_Password"
             android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:labelFor="@id/admin_Password"
         android:layout_gravity="center"
         >
 
@@ -104,7 +120,9 @@
             android:id="@+id/activityRegistrationCreateAccountButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:labelFor="@id/activityRegistrationCreateAccountButton"
             android:text="Create Account"
+
             />
 
 
