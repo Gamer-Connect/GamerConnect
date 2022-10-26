@@ -121,6 +121,7 @@ class RegistrationActivity : AppCompatActivity() {
                 err.error
                 passwordTxt.text.clear()
                 checkPasswordTxt.text.clear()
+                return false
 
             }
         return true
