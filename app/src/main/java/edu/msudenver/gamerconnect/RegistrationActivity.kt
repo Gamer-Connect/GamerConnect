@@ -13,6 +13,8 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import edu.msudenver.gamerconnect.manageaccount.AccountAuth
 
@@ -25,17 +27,24 @@ class RegistrationActivity : AppCompatActivity() {
     private lateinit var password:String
     private lateinit var checkPassword:String
 
-    private val fullNameTxt: EditText = findViewById(R.id.createName)
-    private val userNameTxt: EditText = findViewById(R.id.createUserName)
-    private val emailTxt: EditText = findViewById(R.id.createEmail)
-    private val passwordTxt: EditText = findViewById(R.id.createPassword)
-    private val checkPasswordTxt: EditText = findViewById(R.id.createPasswordCheck)
+
     private lateinit var err: TextView
+
+    private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
+
+        val fullNameTxt: EditText = findViewById(R.id.createName)
+        val userNameTxt: EditText = findViewById(R.id.createUserName)
+        val emailTxt: EditText = findViewById(R.id.createEmail)
+        val passwordTxt: EditText = findViewById(R.id.createPassword)
+        val checkPasswordTxt: EditText = findViewById(R.id.createPasswordCheck)
+
+
+        dbRef = FirebaseDatabase.getInstance().getReference("Users")
 
         val createBtn: Button = findViewById(R.id.createAccount)
 
@@ -105,6 +114,8 @@ class RegistrationActivity : AppCompatActivity() {
 
     private fun validPassword(password: String, checkPassword: String): Boolean {
             err = findViewById(R.id.errPassword)
+        val passwordTxt: EditText = findViewById(R.id.createPassword)
+        val checkPasswordTxt: EditText = findViewById(R.id.createPasswordCheck)
 
         if (checkPassword.length < 6) {
             err.visibility = View.VISIBLE
@@ -135,6 +146,12 @@ class RegistrationActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         Log.d(AccountAuth.TAG, "Account created successfully")
                         val user = auth.currentUser
+
+                        val model = UserModel(user?.uid+"", fullName,userName,email)
+
+                        dbRef.child(user?.uid+"").setValue(model)
+
+
                         updateUI(user)
                     }
                     else {

@@ -111,6 +111,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
+        Log.d(TAG, "Update UI init")
         val intent = Intent(this, DashboardScreen::class.java)
         startActivity(intent)
     }
