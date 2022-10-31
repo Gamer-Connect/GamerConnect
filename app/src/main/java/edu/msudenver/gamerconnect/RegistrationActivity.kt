@@ -13,6 +13,8 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import edu.msudenver.gamerconnect.manageaccount.AccountAuth
 
@@ -32,10 +34,12 @@ class RegistrationActivity : AppCompatActivity() {
     private val checkPasswordTxt: EditText = findViewById(R.id.createPasswordCheck)
     private lateinit var err: TextView
 
+    private lateinit var dbRef: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
-
+        dbRef = FirebaseDatabase.getInstance().getReference("Users")
 
         val createBtn: Button = findViewById(R.id.createAccount)
 
@@ -135,6 +139,12 @@ class RegistrationActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         Log.d(AccountAuth.TAG, "Account created successfully")
                         val user = auth.currentUser
+
+                        val model = UserModel(user?.uid+"", fullName,userName,email)
+
+                        dbRef.child(user?.uid+"").setValue(model)
+
+
                         updateUI(user)
                     }
                     else {
