@@ -6,9 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".RegistrationActivity"
-    android:background="#3F474C"
+    android:background="@android:color/holo_blue_light"
     android:padding="10dp"
     android:gravity="center" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:srcCompat="@drawable/logo" />-->
 
     <TextView
         android:layout_width="wrap_content"

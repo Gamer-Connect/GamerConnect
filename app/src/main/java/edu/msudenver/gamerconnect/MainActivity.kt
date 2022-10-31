@@ -11,14 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // When login button on activity_main is clicked it was take the user to activity_page_home
-        val loginButton = findViewById<Button>(R.id.login_button)
+        val loginButton = findViewById<Button>(R.id.loginBtn)
         loginButton.setOnClickListener {
             val intent = Intent(this, HomePageActivity::class.java)
             startActivity(intent)
         }
 
         // When create button is pressed in activity_main it will take the user to activity_registration
-        val mainCreateButton = findViewById<Button>(R.id.create_button)
+        val mainCreateButton = findViewById<Button>(R.id.createButton)
         mainCreateButton.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
