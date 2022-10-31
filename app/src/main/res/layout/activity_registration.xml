@@ -5,100 +5,124 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="4dp"
-    tools:context=".ProfileActivity">
-
+    tools:context=".RegistrationActivity"
+    android:background="#3F474C"
+    android:padding="10dp"
+    android:gravity="center" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="4dp"
-        android:text="Thank You for Choosing Gamer Connect!"
-        />
+        android:padding="7dp"
+        android:textColor="#FFFFFF"
+        android:text="Create your Gamer Connect Account" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/errName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:textColor="#FF0000"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="First Name: " />
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
-        <EditText
-            android:id="@+id/user_First_Name"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/createName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:layout_gravity="center" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/errUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:textColor="#FF0000"
+        android:text="Please enter Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Last Name: " />
+    <EditText
+        android:id="@+id/createUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:layout_gravity="center" />
 
-        <EditText
-            android:id="@+id/user_Last_Name"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/errEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:textColor="#FF0000"
+        android:text="Please Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Username: " />
 
-        <EditText
-            android:id="@+id/user_Email"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
+    <EditText
+        android:id="@+id/createEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/errPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:textColor="#FF0000"
+        android:text="Please Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password: " />
+    <EditText
+        android:id="@+id/createPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_gravity="center" />
 
-        <EditText
-            android:id="@+id/user_Password"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/errPassCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:textColor="#FF0000"
+        android:text="Please Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
+
+    <EditText
+        android:id="@+id/createPasswordCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:singleLine="true"
         android:layout_gravity="center"
-        >
+        android:inputType="textPassword" />
 
-        <Button android:id="@+id/activityRegistrationCreateAccountButton"
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create Account"
+        android:id="@+id/createAccount" />
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Create Account"
-            />
-
-
-    </LinearLayout>
 
 </LinearLayout>
