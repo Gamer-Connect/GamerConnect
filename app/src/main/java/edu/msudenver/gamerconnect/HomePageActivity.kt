@@ -1,25 +1,51 @@
 package edu.msudenver.gamerconnect
 
-import android.app.GameManager
-import android.content.Context.GAME_SERVICE
-import android.os.Build
+
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.core.Context
+import androidx.recyclerview.widget.RecyclerView
+import com.api.igdb.apicalypse.APICalypse
+import com.api.igdb.apicalypse.Sort
+import com.api.igdb.exceptions.RequestException
+import com.api.igdb.request.IGDBWrapper
+import com.api.igdb.request.games
+import proto.Game
+
 
 class HomePageActivity : AppCompatActivity(){
+    lateinit var recyclerView: RecyclerView
+
+    private inner class ItemHolder(view: View): RecyclerView.ViewHolder(view) {
+
+    }
+
+
+
+
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_page_home)
 
-//        // Only call this for Android 12 and higher devices
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-//            // Get GameManager from SystemService
-//            val gameManager: GameManager? = context.getSystemService(Context.GAME_SERVICE) as GameManager?
-//
-//            // Returns the selected GameMode
-//            val gameMode = gameManager?.gameMode
-//        }
+        IGDBWrapper.setCredentials(Companion.CLIENT_ID, Companion.BEARER_TOKEN)
+
+        val IGDB_API = APICalypse().fields("*").sort("release_dates.date", Sort.DESCENDING)
+        try{
+            val games: List<Game> = IGDBWrapper.games(IGDB_API)
+        } catch(e: RequestException) {
+            // Do something or error
+        }
 
     }
+
+    companion object {
+        private const val BEARER_TOKEN:String = "232aut9v0nwswgsjs3t773m2tgraap" // or access token
+        private const val CLIENT_ID: String = "b7gj741p59m8q3fuunsy1w7pclf79i"
+    }
+
+
 }

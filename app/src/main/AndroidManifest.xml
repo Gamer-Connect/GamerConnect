@@ -21,8 +21,9 @@
             android:resource="@xml/game_mode_config" />
 
         <activity
-            android:name=".MainDashboard.DashboardScreen"
-            android:exported="false" />
+            android:name=".HomePageActivity" />
+        <activity
+            android:name=".MainDashboard.DashboardScreen" />
         <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
