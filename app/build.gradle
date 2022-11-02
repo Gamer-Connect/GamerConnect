@@ -58,4 +58,8 @@ dependencies {
     // IGDB Kotlin wrapper
     implementation 'io.github.husnjak:igdb-api-jvm:1.0.7'
 
+    //Junit 5
+    testImplementation(platform("org.junit:junit-bom:5.9.1"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+
 }

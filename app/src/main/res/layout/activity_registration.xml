@@ -26,6 +26,15 @@
         android:textColor="#FFFFFF"
         android:text="Create your Gamer Connect Account" />
 
+    <TextView
+        android:id="@+id/errName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
+
     <EditText
         android:id="@+id/createName"
         android:layout_width="match_parent"
@@ -34,8 +43,16 @@
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:singleLine="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"/>
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/errUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Please enter Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
     <EditText
         android:id="@+id/createUserName"
@@ -45,8 +62,16 @@
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:singleLine="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"/>
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/errEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Please Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
 
     <EditText
@@ -58,8 +83,16 @@
         android:textColor="#FFFFFF"
         android:singleLine="true"
         android:inputType="textEmailAddress"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"/>
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/errPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Please Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
     <EditText
         android:id="@+id/createPassword"
@@ -70,8 +103,16 @@
         android:textColor="#FFFFFF"
         android:singleLine="true"
         android:inputType="textPassword"
-        android:layout_gravity="center"
-        android:layout_marginBottom="10dp"/>
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/errPassCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Please Username"
+        android:layout_gravity="left"
+        android:visibility="invisible"   />
 
     <EditText
         android:id="@+id/createPasswordCheck"
@@ -85,6 +126,7 @@
         android:inputType="textPassword" />
 
     <Button
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
