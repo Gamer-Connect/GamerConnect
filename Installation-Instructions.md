@@ -5,7 +5,7 @@
 * [Android Studio Download](https://developer.android.com/studio/)
 * [Gamer Connect APK downloads](https://drive.google.com/drive/folders/1GIFDsYbtWTWznMRf02ZiG-VD2y_sPhQk?usp=sharing)
 
-###
+### Running Application via Android Studio
 1. Download Android Studio using this [link](https://developer.android.com/studio/)
 2. Clone main repository.
 3. Open Android Studio. Using the "open" button, select the project that was cloned from the main repository.
