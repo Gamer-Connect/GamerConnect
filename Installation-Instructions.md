@@ -13,11 +13,8 @@
 5. Open Android Studio. Using the "open" button, select the project that was cloned from the main repository.
 6. Create an emulator using the device Pixel 2 API 30.
 7. Click the green play button on the top of your screen to run your application on your emulator.
+* [Instructions for testing via Android Studio](https://learn.microsoft.com/en-us/windows/android/emulator#install-android-emulator-with-visual-studio) 
 
-### Using Gamer Connect on PC via emulator
-* [Instructions for testing via Android Studio](https://learn.microsoft.com/en-us/windows/android/emulator#install-android-emulator-with-visual-studio) This would work for Windows, Linux, and Mac.
-
-***
 ### Using Gamer Connect on Android Phone
 * Download a Gamer Connect APK from the link above to your android device then follow [these instructions.](https://youtu.be/N0M4XGkpCn4)
 ***
