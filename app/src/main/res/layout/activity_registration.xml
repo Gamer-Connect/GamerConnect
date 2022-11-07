@@ -86,6 +86,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Create Account"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:id="@+id/createAccount" />
 
 

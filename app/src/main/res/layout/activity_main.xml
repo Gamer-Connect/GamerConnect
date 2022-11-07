@@ -67,9 +67,11 @@
             android:id="@+id/user_Password"
             android:layout_width="180dp"
             android:layout_height="48dp"
+            app:passwordToggleEnabled="true"
             android:layout_marginRight="8dp"
             android:inputType="textPassword"
-            android:background="@android:drawable/dialog_holo_light_frame"/>
+            android:background="@android:drawable/dialog_holo_light_frame"
+            />
 
         <Button
             android:id="@+id/showHideBtn"

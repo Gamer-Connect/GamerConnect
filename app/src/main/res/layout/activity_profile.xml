@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    android:background="@android:color/holo_blue_light"
+    tools:context=".ProfileActivity"
+    tools:ignore="contentDescription"
+    >
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,32 +24,33 @@
             android:layout_height="80dp"
             android:id="@+id/profileImage"
             />
+
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/name"
+            android:layout_marginTop="20dp"
             android:text="First Name"
-            android:textSize="20dp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="20sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/email"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Last Name"
             android:layout_marginTop="20dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/emailText"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Email"
             android:layout_marginTop="20dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/usernameText"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:text="Username"
             android:layout_marginTop="20dp"/>
         <Button
