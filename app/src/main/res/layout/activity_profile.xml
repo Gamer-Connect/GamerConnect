@@ -39,8 +39,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Last Name"
             android:background="@android:drawable/dialog_holo_light_frame"
+            android:text="Last Name"
             android:textSize="20sp" />
 
         <TextView
@@ -48,8 +48,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Email"
             android:background="@android:drawable/dialog_holo_light_frame"
+            android:text="Email"
             android:textSize="20sp" />
 
         <TextView
