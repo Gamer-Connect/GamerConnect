@@ -6,21 +6,35 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light"
     android:orientation="vertical"
-    android:padding="4dp"
+    android:background="@android:color/holo_blue_light"
+    android:padding="10dp"
     tools:context=".ProfileActivity">
 
+<<<<<<< HEAD
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/logo"
         />
+=======
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+>>>>>>> main
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
         android:textColor="@color/white"
+<<<<<<< HEAD
         android:text="Welcome to Gamer Connect! Please Login!"
+=======
+        android:text="Welcome to Gamer Connect!"
+        android:layout_gravity="center"
+>>>>>>> main
         />
 
     <TextView
@@ -29,12 +43,13 @@
         android:padding="7dp"
         android:textColor="@color/white"
         android:text="Don't Have an Account? Click on 'Create Account'! "
+        android:layout_gravity="center"
         />
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:orientation="horizontal">
 
         <TextView
@@ -72,15 +87,50 @@
             android:inputType="textPassword"
             android:background="@android:drawable/dialog_holo_light_frame"
             />
+=======
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingEnd="40dp">
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:inputType="textPassword" />
+>>>>>>> main
 
         <Button
             android:id="@+id/showHideBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="Show"
             android:background="@android:drawable/dialog_holo_light_frame"
             android:labelFor="@id/user_Password"/>
+=======
+            android:text="Show password"
+            android:textSize="10dp"
+            android:layout_gravity="left"/>
+>>>>>>> main
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -90,19 +140,29 @@
         >
 
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:text="Login"
             android:id="@+id/login_button"
             android:background="@android:drawable/dialog_holo_light_frame"
             />
+=======
+            android:text="Login" />
+
+>>>>>>> main
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Create Account"
+<<<<<<< HEAD
             android:id="@+id/create_button"
             android:background="@android:drawable/dialog_holo_light_frame"
+=======
+            android:id="@+id/createButton"
+>>>>>>> main
             />
 
     </LinearLayout>

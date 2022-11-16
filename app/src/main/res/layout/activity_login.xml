@@ -5,11 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:padding="4dp"
     tools:context=".ProfileActivity"
     tools:ignore="contentDescription"
     >
+=======
+    android:padding="10dp"
+    tools:context=".ProfileActivity">
+>>>>>>> main
 
     <ImageView
         android:layout_width="wrap_content"

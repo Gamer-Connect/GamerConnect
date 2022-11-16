@@ -35,6 +35,8 @@ class LoginActivity : AppCompatActivity() {
         val emailEdtTxt: EditText = findViewById(R.id.userEmail)
         val passwordEdtTxt: EditText = findViewById(R.id.userPassword)
 
+        checkLog()
+
 
         loginBtn.setOnClickListener {
             email = emailEdtTxt.text.toString()
@@ -49,6 +51,14 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    private fun checkLog() {
+        val user = Firebase.auth.currentUser
+        if(user != null){
+            updateUI(user)
+        }
+        return
     }
 
     private fun validateLogin(email: String, password: String) {
@@ -101,6 +111,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
+        Log.d(TAG, "Update UI init")
         val intent = Intent(this, DashboardScreen::class.java)
         startActivity(intent)
     }
