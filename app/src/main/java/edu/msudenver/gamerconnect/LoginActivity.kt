@@ -15,7 +15,6 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import edu.msudenver.gamerconnect.MainDashboard.DashboardScreen
 
 
 class LoginActivity : AppCompatActivity() {
@@ -112,7 +111,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(user: FirebaseUser?) {
         Log.d(TAG, "Update UI init")
-        val intent = Intent(this, HomePageActivity::class.java)
+        val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
     }
 }

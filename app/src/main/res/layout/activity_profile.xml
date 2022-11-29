@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light"
-    tools:context=".ProfileActivity"
-    tools:ignore="contentDescription"
-    >
+    tools:context=".ProfileActivity">
 
-    <ImageView
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo" />
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/sidebar"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,36 +33,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/dialog_holo_light_frame"
             android:text="First Name"
-            android:textSize="20sp" />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/dialog_holo_light_frame"
             android:text="Last Name"
-            android:textSize="20sp" />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/emailText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/dialog_holo_light_frame"
             android:text="Email"
-            android:textSize="20sp" />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/usernameText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@android:drawable/dialog_holo_light_frame"
             android:text="Username"
-            android:textSize="20sp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/playButton"

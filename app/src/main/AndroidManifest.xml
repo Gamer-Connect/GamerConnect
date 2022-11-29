@@ -23,8 +23,6 @@
         <activity
             android:name=".HomePageActivity" />
         <activity
-            android:name=".MainDashboard.DashboardScreen" />
-        <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity

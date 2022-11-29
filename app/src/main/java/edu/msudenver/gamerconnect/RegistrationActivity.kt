@@ -113,7 +113,7 @@ class RegistrationActivity : AppCompatActivity() {
 
 
     private fun validPassword(password: String, checkPassword: String): Boolean {
-            err = findViewById(R.id.errPassword)
+        err = findViewById(R.id.errPassword)
         val passwordTxt: EditText = findViewById(R.id.createPassword)
         val checkPasswordTxt: EditText = findViewById(R.id.createPasswordCheck)
 
@@ -126,55 +126,38 @@ class RegistrationActivity : AppCompatActivity() {
             return false
         }
 
-            if (!password.equals(checkPassword)) {
-                err.visibility = View.VISIBLE
-                err.text = "Passwords do not match"
-                err.error
-                passwordTxt.text.clear()
-                checkPasswordTxt.text.clear()
-                return false
+        if (!password.equals(checkPassword)) {
+            err.visibility = View.VISIBLE
+            err.text = "Passwords do not match"
+            err.error
+            passwordTxt.text.clear()
+            checkPasswordTxt.text.clear()
+            return false
 
-            }
+        }
         return true
     }
 
     private fun createUser(email: String, password: String) {
         Log.d(TAG, "email:$email password:$password being sent to create")
-<<<<<<< HEAD
         auth = Firebase.auth
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d(AccountAuth.TAG, "Account created successfully")
                     val user = auth.currentUser
+
+                    val model = UserModel(user?.uid+"", fullName,userName,email)
+
+                    dbRef.child(user?.uid+"").setValue(model)
+
+
                     updateUI(user)
-=======
-            auth = Firebase.auth
-            auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        Log.d(AccountAuth.TAG, "Account created successfully")
-                        val user = auth.currentUser
-
-                        val model = UserModel(user?.uid+"", fullName,userName,email)
-
-                        dbRef.child(user?.uid+"").setValue(model)
-
-
-                        updateUI(user)
-                    }
-                    else {
-                        Log.w(AccountAuth.TAG, "userCreateAccount:failure", task.exception)
-                        Toast.makeText(baseContext, "Account already exists or couldn't be created.",
-                            Toast.LENGTH_SHORT).show()
-                    }
->>>>>>> main
                 }
                 else {
                     Log.w(AccountAuth.TAG, "userCreateAccount:failure", task.exception)
                     Toast.makeText(baseContext, "Account already exists or couldn't be created.",
                         Toast.LENGTH_SHORT).show()
-                    //updateUI(user)
                 }
             }
 

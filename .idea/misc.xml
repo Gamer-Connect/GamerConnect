@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/account_create_admin.xml" value="0.1" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/activity_dashboard_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/activity_page_home.xml" value="0.25" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/activity_profile.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/activity_registration.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/header.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/layout/page_admin.xml" value="0.1" />
+        <entry key="..\:/Users/Denve/AndroidStudioProjects/GamerConnect/app/src/main/res/menu/sidebar.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Denve/GamerConnect/app/src/main/res/layout/activity_page_home.xml" value="0.192481884057971" />
         <entry key="..\:/Users/Denve/GamerConnect/app/src/main/res/layout/activity_profile.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/Denve/GamerConnect/app/src/main/res/layout/activity_registration.xml" value="0.18591691995947315" />
