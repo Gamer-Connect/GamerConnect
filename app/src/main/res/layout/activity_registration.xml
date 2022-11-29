@@ -7,23 +7,24 @@
     android:orientation="vertical"
     tools:context=".RegistrationActivity"
     android:background="@android:color/holo_blue_light"
-    android:padding="10dp"
+    android:padding="4dp"
     android:gravity="center" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        />
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:srcCompat="@drawable/logo" />-->
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="7dp"
-        android:textColor="#FFFFFF"
+        android:padding="4dp"
+        android:textColor="@color/white"
         android:text="Create your Gamer Connect Account" />
 
     <TextView
@@ -38,7 +39,7 @@
     <EditText
         android:id="@+id/createName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Full Name"
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
@@ -57,7 +58,7 @@
     <EditText
         android:id="@+id/createUserName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="User Name"
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
@@ -77,7 +78,7 @@
     <EditText
         android:id="@+id/createEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Email"
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
@@ -97,7 +98,7 @@
     <EditText
         android:id="@+id/createPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Password"
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
@@ -117,7 +118,7 @@
     <EditText
         android:id="@+id/createPasswordCheck"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Confirm Password"
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
@@ -131,6 +132,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Create Account"
+        android:background="@android:drawable/dialog_holo_light_frame"
         android:id="@+id/createAccount" />
 
 

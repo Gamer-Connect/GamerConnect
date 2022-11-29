@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@android:color/holo_blue_light"
+    android:orientation="vertical"
     android:padding="10dp"
     tools:context=".ProfileActivity">
-
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="4dp"
         android:textColor="@color/white"
-        android:text="Welcome to Gamer Connect!"
-        android:layout_gravity="center"
-        />
+        android:text="Welcome to Gamer Connect! Please Login!"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,9 +34,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:paddingEnd="40dp">
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Email: " />
+
+        <EditText
+            android:id="@+id/user_Email"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/user_Email"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Password: " />
+
+        <EditText
+            android:id="@+id/user_Password"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            app:passwordToggleEnabled="true"
+            android:layout_marginRight="8dp"
+            android:inputType="textPassword"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            />
 
         <EditText
             android:id="@+id/userEmail"
@@ -67,9 +99,10 @@
             android:id="@+id/showHideBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show password"
-            android:textSize="10dp"
-            android:layout_gravity="left"/>
+            android:text="Show"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:labelFor="@id/user_Password"/>
+
     </LinearLayout>
 
     <ScrollView
@@ -85,18 +118,20 @@
         >
 
         <Button
-            android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Login" />
+            android:text="Login"
+            android:id="@+id/login_button"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            />
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Create Account"
-            android:id="@+id/createButton"
-            />
+            android:id="@+id/create_button"
+            android:background="@android:drawable/dialog_holo_light_frame"/>
 
     </LinearLayout>
 

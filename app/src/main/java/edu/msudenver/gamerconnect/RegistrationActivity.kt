@@ -140,6 +140,15 @@ class RegistrationActivity : AppCompatActivity() {
 
     private fun createUser(email: String, password: String) {
         Log.d(TAG, "email:$email password:$password being sent to create")
+<<<<<<< HEAD
+        auth = Firebase.auth
+        auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Log.d(AccountAuth.TAG, "Account created successfully")
+                    val user = auth.currentUser
+                    updateUI(user)
+=======
             auth = Firebase.auth
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
@@ -159,7 +168,15 @@ class RegistrationActivity : AppCompatActivity() {
                         Toast.makeText(baseContext, "Account already exists or couldn't be created.",
                             Toast.LENGTH_SHORT).show()
                     }
+>>>>>>> main
                 }
+                else {
+                    Log.w(AccountAuth.TAG, "userCreateAccount:failure", task.exception)
+                    Toast.makeText(baseContext, "Account already exists or couldn't be created.",
+                        Toast.LENGTH_SHORT).show()
+                    //updateUI(user)
+                }
+            }
 
 
     }
@@ -171,24 +188,3 @@ class RegistrationActivity : AppCompatActivity() {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
