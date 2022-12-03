@@ -81,6 +81,8 @@ dependencies {
     implementation 'com.github.kittinunf.fuel:fuel:2.3.1'
     // coroutines
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    // picasso Image builder
+    implementation 'com.squareup.picasso:picasso:2.8'
 
 
 
