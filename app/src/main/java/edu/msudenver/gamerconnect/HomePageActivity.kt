@@ -1,14 +1,12 @@
 package edu.msudenver.gamerconnect
 
 
-import android.app.Activity
-import android.content.ClipData
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import android.widget.SearchView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
@@ -25,7 +23,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import proto.Game
-
+import androidx.appcompat.widget.SearchView
 
 
 class HomePageActivity : AppCompatActivity() { // End Class
@@ -92,8 +90,6 @@ class HomePageActivity : AppCompatActivity() { // End Class
 
     lateinit var toggle : ActionBarDrawerToggle
     lateinit var gameList: List<Game>
-    lateinit var searchQuery: SearchView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -102,6 +98,7 @@ class HomePageActivity : AppCompatActivity() { // End Class
         val navView : NavigationView = findViewById(R.id.nav_view)
         val searchView: SearchView = findViewById(R.id.search_bar)
 
+
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -109,14 +106,14 @@ class HomePageActivity : AppCompatActivity() { // End Class
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
             override fun onQueryTextChange(newText: String): Boolean {
-                /* TODO create a dop down search suggestion */
+                /* TODO create a drop down search suggestion */
                 return false
             }
 
             override fun onQueryTextSubmit(query: String): Boolean {
-                searchView.clearFocus()
                 getGameData(query)
                 recyclerView.adapter = GameAdapter(gameList)
+                searchView.clearFocus()
                 return false
             }
 
