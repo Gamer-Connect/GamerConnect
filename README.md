@@ -1,11 +1,12 @@
 README file
 
 # Welcome to Gamer Connect!
-#### <br> The Android app the helps gamers connect! </br>
-Simply create a profile and add games that you like to play.
+### <br> The Android app the helps gamers connect! </br>
+### Simply create a profile and add games that you like to play.
 ---
-<br>[Link to our most recent APK](https://drive.google.com/drive/folders/1maQCU7OV3gJwCFh3ZV44jWmql81esELl?usp=sharing). </br>
-<br>[Link to our installation instructions](https://github.com/Gamer-Connect/GamerConnect/blob/main/Installation-Instructions.md). </br>
+#### <br>[Link to our most recent APK](https://drive.google.com/drive/folders/1maQCU7OV3gJwCFh3ZV44jWmql81esELl?usp=sharing). </br>
+#### <br>[Link to our installation instructions](https://github.com/Gamer-Connect/GamerConnect/blob/main/Installation-Instructions.md). </br>
+<br> </br>
 ---
 
 ## Version 0.0.8   Released 11/30/2022
