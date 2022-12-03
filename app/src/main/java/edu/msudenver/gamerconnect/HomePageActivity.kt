@@ -20,9 +20,6 @@ import com.api.igdb.request.games
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import proto.Game
 import androidx.appcompat.widget.SearchView
 import com.api.igdb.request.covers
@@ -30,7 +27,7 @@ import com.api.igdb.utils.ImageSize
 import com.api.igdb.utils.ImageType
 import com.api.igdb.utils.imageBuilder
 import com.squareup.picasso.Picasso
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.*
 import proto.Cover
 
 
@@ -38,6 +35,7 @@ class HomePageActivity : AppCompatActivity() { // End Class
 
     // Coroutines
     private val thread = CoroutineScope(Dispatchers.IO)
+    private val thread2 = CoroutineScope(Dispatchers.IO)
 
 
     fun getGameData(userInput: String): MutableList<Game> {
@@ -56,7 +54,7 @@ class HomePageActivity : AppCompatActivity() { // End Class
 
 
         }
-        Thread.sleep(2000)
+        Thread.sleep(1000)
         return gameList
     }
 
@@ -205,7 +203,6 @@ class HomePageActivity : AppCompatActivity() { // End Class
     }
 
     private fun loadImageValue():MutableList<String> {
-
         var idList: MutableList<String> = mutableListOf()
         val gameId = gameList
         var count = 0
