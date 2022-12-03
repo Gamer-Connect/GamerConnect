@@ -3,7 +3,7 @@
 ## Download Links
 * [Gamer-Connect GitHub Repository](https://github.com/Gamer-Connect/GamerConnect/tree/main)
 * [Android Studio Download](https://developer.android.com/studio/)
-* [Gamer Connect APK downloads](https://drive.google.com/drive/folders/1GIFDsYbtWTWznMRf02ZiG-VD2y_sPhQk?usp=sharing)
+* [Gamer Connect Final APK download](https://drive.google.com/drive/folders/1maQCU7OV3gJwCFh3ZV44jWmql81esELl?usp=sharing)
 
 ### Running Application via Android Studio
 1. Download Android Studio using this [link](https://developer.android.com/studio/)
