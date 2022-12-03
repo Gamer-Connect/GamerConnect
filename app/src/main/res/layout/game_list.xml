@@ -11,12 +11,12 @@
         android:orientation="horizontal"
         >
 
-        <TextView
+        <ImageView
+            android:id="@+id/gameImage"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/gameId"
-            android:textSize="20sp"
-            android:layout_weight="2"/>
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_image_not_supported_24" />
 
         <TextView
             android:layout_height="wrap_content"
@@ -25,6 +25,8 @@
             android:textSize="20sp"
             android:layout_weight="1"
             android:layout_gravity="left"/>
+
+
 
 
     </LinearLayout>
