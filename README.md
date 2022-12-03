@@ -1,29 +1,31 @@
 README file
 
 # Welcome to Gamer Connect!
-### The Android app the helps gamers connect!
+#### The Android app the helps gamers connect!
+
 ---
 [Link to our most recent APK](https://drive.google.com/drive/folders/1maQCU7OV3gJwCFh3ZV44jWmql81esELl?usp=sharing).
+[Link to our installation instructions](https://github.com/Gamer-Connect/GamerConnect/blob/main/Installation-Instructions.md)
 ---
 
 ## Version 0.0.8   Released 11/30/2022
-<br>In this version of the app...</br>
-* Blah
+<br>In this Final version of the app...</br>
+* Added game picutes to the selectable game titles.
 ---
 
 ## Version 0.0.7   Released 11/16/2022
 <br>In this version of the app...</br>
-* Blah
+* Implemented the IGDB API so that users can select games.  
 ---
 
 ## Version 0.0.6   Released 11/09/2022
-<br>In this FINAL version of the app...</br>
-* Blah
+<br>In this version of the app...</br>
+* Page traversal and button functionality fixes.  
 ---
 
 ## Version 0.0.5   Released 11/02/2022
 <br>In this version of the app...</br>
-* Blah
+* Implemented the Google Firebase database.
 ---
 
 ## Version 0.0.4   Released 10/26/2022
