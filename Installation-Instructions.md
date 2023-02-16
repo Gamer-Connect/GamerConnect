@@ -19,5 +19,4 @@
 * Download a Gamer Connect APK from the link above to your android device then follow [these instructions.](https://youtu.be/N0M4XGkpCn4)
 ***
 
-
-
+# Test
